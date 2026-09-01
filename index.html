@@ -260,7 +260,8 @@
     .login-error { color: #b34747; font-size: 12px; margin-top: 10px; display: none; }
 
     /* 未解锁时隐藏正文 */
-    body:not(.unlocked) > *:not(.login-overlay) { display: none !important; }
+    body { visibility: hidden; }
+body.unlocked, .login-overlay { visibility: visible; }
   </style>
 </head>
 <body>
